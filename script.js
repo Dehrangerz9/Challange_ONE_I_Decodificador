@@ -52,15 +52,3 @@ function descriptar(stringDescriptada){
     }
     return stringDescriptada;
 }
-
-
-
-
-
-
-//notas (Remova antes de enviar)
-
-/*
-console.table(matrizCodigo) -> coloca uma matriz como tabela no console
-
-*/
