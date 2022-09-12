@@ -7,6 +7,7 @@
     <title>Decodificador</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
@@ -15,30 +16,29 @@
     </header>
     <main>
         <div class="linha">
-            <div class="coluna-esquerda">
-                <textarea name="Entrada" id="entrada"class="campo-de-texto">Digite um texto...</textarea>
+            <section class="coluna-esquerda">
+                <textarea class="campo-de-texto" id="entrada" placeholder="Digite um texto..."></textarea>
                 <div class="comandos">
 <p class="aviso"><i class="fa fa-info-circle"></i> Apenas letras minusculas e sem acento.</p>
                     <div>
-                        <p class="codificar">Criptografar</p>
-                        <p class="decodificar">Descriptografar</p>
+                        <input type="button" class="codificar" value="Criptografar" onclick="btnEncriptar()">
+                        <input type="button" class="decodificar" value="Descriptografar" onclick="btnDescriptar()">
                     </div>
                 </div>
-            </div>
-            <div class="coluna-direita">
-                <div class="saida">
+            </section>
+            <section class="coluna-direita">
+                <div class="sem-mensagem">
                     <img src="Imagens/High quality products 1 1.svg" alt="">
                     <br>
                     <p><strong>Nenhuma mensagem encontrada</strong></p>
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-            </div>
+                    <textarea class="com-mensagem" id="saida" ></textarea>
+                    <input class="copiar" type="button" value="Copiar" onclick="btnCopiar()">
+            </section>
         </div>
     </main>
     <footer>Site desenvolvido por David Richard</footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
-<script>
-    var entrada = HTMLInputElement.select();
-</script>
